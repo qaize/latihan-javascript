@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Pokédex</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1>Pokédex</h1>
+        <div id="pokedex">
+            <button id="load-data">Load Pokémon</button>
+            <div id="pokemon-list"></div>
+            <div id="pagination">
+                <button id="prev-page">Previous Page</button>
+                <button id="next-page">Next Page</button>
+            </div>
+        </div>
+        <button id="showToastButton">Copy Link</button>
+
+        <div
+            id="copiedToast"
+            class="copied-toast"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+        >
+            <div class="toast-body">Link copied to clipboard !</div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

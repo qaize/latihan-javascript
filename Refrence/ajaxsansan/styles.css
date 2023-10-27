@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #f44336;
+}
+
+#pokedex {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+#load-data {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#load-data:hover {
+    background-color: #45a049;
+}
+
+#pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pokemon-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* toast */
+.copied-toast {
+    position: fixed;
+    height: fit-content;
+    bottom: 20px;
+    right: 20px;
+    background-color: #165d73;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 6px;
+    visibility: hidden;
+    z-index: 1050; /* Adjust the z-index as needed */
+}
+
+.copied-toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+.copied-toast .toast-body {
+    display: block;
+    text-align: right;
+    font-family: inherit;
+    font-size: 12px;
+}
