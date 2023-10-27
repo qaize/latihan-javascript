@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    #myDIV {
+      margin-top: 10px;
+      height: 250px;
+      width: 250px;
+      overflow: auto;
+    }
+
+    #content {
+      height: 800px;
+      width: 2000px;
+      padding: 10px;
+      background-color: coral;
+    }
+  </style>
+
+  <body>
+    <h1>The Element Object</h1>
+    <h2>The scrollHeight and scrollWidth Properties</h2>
+
+    <div id="myDIV">
+      <div id="content">Some content..</div>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+      const element = document.getElementById("content");
+      let y = element.scrollHeight;
+      let x = element.scrollWidth;
+      document.getElementById("demo").innerHTML =
+        "Height: " + y + " Width: " + x;
+    </script>
+  </body>
+</html>
