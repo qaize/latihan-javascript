@@ -1,0 +1,49 @@
+body {
+  /* background: grey; */
+}
+
+.title {
+  text-align: center;
+}
+
+#search {
+  text-align: center;
+}
+
+#main-body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+}
+
+.surah-card {
+  display: flex;
+  border: 2px solid rgb(142, 239, 239);
+  width: 25%;
+  height: 120px;
+  padding-left: 10px;
+  padding-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.surah-card > div {
+  width: 50%;
+}
+
+.surah-card > button {
+  width: auto;
+  height: 30px;
+}
+
+.pagination {
+  text-align: center;
+}

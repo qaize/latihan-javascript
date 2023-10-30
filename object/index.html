@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Person(id, name, address) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+      }
+
+      let person = new Person("1", "iwan", "Mataram");
+      console.log(person);
+
+      let objectPerson = {
+        id: "1",
+        name: "test",
+        address: "Mtr",
+      };
+
+      console.log(objectPerson);
+      console.log(JSON.stringify(objectPerson));
+
+      const coder = {
+        ingpo: "test",
+        data: function () {
+          console.log(
+            `Hello my name is ${this.name}, iam from ${this.address}`
+          );
+        },
+      };
+
+      let me = Object.create(coder);
+      me.name = "iwan";
+      me.address = "Mataram";
+      me.data();
+    </script>
+  </body>
+</html>
