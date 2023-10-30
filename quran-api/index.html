@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/4cbbb9fb69.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
     <title>Document</title>
   </head>
   <body>
-    <div class="title"><h1>Al Qur'an</h1></div>
+    <div class="banner"><h1>Al Qur'an</h1></div>
     <div id="search">
       <input type="text" placeholder="surah" />
-      <button>Search</button>
+      <button>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
     </div>
     <div id="main-body" class="main-body"></div>
     <div class="pagination">
-      <button id="prev">Prev</button>
-      <button id="next">Next</button>
+      <button id="prev" class="buttons">Prev</button>
+      <button id="next" class="buttons">Next</button>
     </div>
   </body>
 </html>

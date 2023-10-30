@@ -76,11 +76,11 @@ function surahCard(surah) {
 
   card.innerHTML = `
   <p>${surah.nomor}</p>
-  <div>
-  <h2>${surah.nama_latin}</h2>
-  <h4>${surah.arti}</h4>
+  <div class="title">
+  <h3>${surah.nama_latin}</h3>
+  <p>${surah.arti}</p>
   </div>
-  <button>Read</button>  
+  <button class="buttons">Read</button>  
   `;
 
   return card;
